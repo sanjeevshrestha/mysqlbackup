@@ -4,7 +4,7 @@ echo -e "MySQL Backup Script"
 echo -e "========================="
 
 if [[ $IS_SLAVE == true ]];then
-	echo "Stopping Slave\n"
+	echo "Stopping Slave..."
 	mysql -u$USERNAME -p$PASSWORD -h $HOST -e 'STOP SLAVE SQL_THREAD;';
 fi
 
