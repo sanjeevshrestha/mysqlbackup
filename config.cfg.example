@@ -1,0 +1,25 @@
+#Configuration file example for the script
+#Set true if the db server is slave server
+IS_SLAVE=false
+
+#MySQL Host
+HOST='localhost'
+
+#MySQL Username
+USERNAME='mysql_user'
+
+#MySQL Password
+PASSWORD='password'
+
+#MySQL DB to backup
+DB="dbtobackup"
+
+#File prefix to use for backup file
+PREFIX='backupprefix'
+
+#Folder where the backup file will be stored
+FOLDER='/opt/mysqlbackups/'
+
+#Experimental S3 sync method
+UPLOAD_TO_S3=true
+
